@@ -1,5 +1,5 @@
 ('deli', () => {
-('takeANumber', () => {
+  ('takeANumber', () => {
     var katzDeli;
     var otherDeli;
 
@@ -8,8 +8,8 @@
       otherDeli = ["Steven", "Blake", "Avi"];
     });
 
-  ('adds a person to the line', () => {
-      expect(takeANumber(katzDeli, 'Ada')).toEqual("Welcome, Ada. You are number 1 in line.");
+('adds a person to the line', () => {
+      expect('takeANumber'(katzDeli, 'Ada')).toEqual("Welcome, Ada. You are number 1 in line");
       expect(katzDeli).toEqual(['Ada']);
     });
 
@@ -26,7 +26,7 @@
       expect(katzDeli).toEqual(["Ada", "Grace", "Kent"]);
     });
   });
-
+function('nowServing){
   ('nowServing', () => {
   ('returns the line is empty when no one is on line', () => {
       expect(nowServing([])).toEqual("There is nobody waiting to be served!");
